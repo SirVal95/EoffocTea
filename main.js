@@ -1,15 +1,3 @@
-// PAGE TRANSITION EFFECT
-
-window.onload = () => {
-  const transition_el = document.querySelector('.transition');
-  // const anchors = document.querySelectorAll('a')
-  
-
-  setTimeout(() => {
-      transition_el.classList.remove('is-active')
-  }), 1000;
-}
-
 
 // FOR THE MOBILE VIEW OF TH NAVIGATION BAR
 
@@ -59,6 +47,6 @@ ScrollReveal({
 });
 
 
-ScrollReveal().reveal('.buy-your-craving, .roasted-coffee-described, .bulk-sell-described, .about-us h1, .stay-updated', { delay: 50, origin: 'top', interval: 100 });
-ScrollReveal().reveal('.buy-black-coffee1, .the-box, .about-us img', { delay: 50, origin: 'bottom', interval: 100 });
+ScrollReveal().reveal('.buy-your-craving, .roasted-coffee-described, .bulk-sell-described, .about-us h1, .stay-updated, .testimonial-overlay h1', { delay: 50, origin: 'top', interval: 100 });
+ScrollReveal().reveal('.buy-black-coffee1, .the-box, .bulk-sell img, .roasted-coffee img, .testimony-box', { delay: 50, origin: 'bottom', interval: 100 });
 

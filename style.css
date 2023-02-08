@@ -281,6 +281,10 @@ a {
 }
 
 
+
+
+
+
 @media screen and (max-width:900px) {
 
     /* NAVBAR */
@@ -664,6 +668,168 @@ a {
     .fa-chevron-right{
         font-size: 12px;
     }
+   
+}
 
-     
+/* ABOUT US SESSION ENDS */
+
+/* TESTIMONIALS */
+
+.testimonials {
+    width: 100%;
+    height: auto;
+    background: #FAF3DD;
+    text-align: left;
+}
+
+.testimonial-overlay {
+    width: 100%;
+    height: 120vh;
+    padding: 50px;
+    background: url(assets/TeaImages/coffee\ patter\ 1.png) repeat;
+}
+
+.testimonial-overlay h1 {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 81px;
+    color: #2E1D03;
+    padding-bottom: 80px;
+}
+
+.testimony-box {
+    position: absolute;
+    width: auto;
+    height: auto;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0px 4px 28px rgba(17, 87, 192, 0.05);
+    backdrop-filter: blur(20px);
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.testimonier, 
+.testimonier-identity {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.testimonials .img1,
+.testimonials .img2 {
+    position: absolute;
+}
+
+.testimonials .img1 {
+    margin-top: 190px;
+    left: 0;
+}
+
+.testimonials .img2 {
+    margin-top: 100px;
+    right: 0;
+}
+
+.testimony-thread .testimony-box:first-child {
+    margin-top: 6%;
+    left: 120px;
+    z-index: 9;
+}
+
+.testimony-thread .testimony-box:nth-child(2) {
+    margin-top: -40px;
+    right: 100px;
+    z-index: 99;
+}
+
+.testimony-thread .testimony-box:last-child {
+    right: 160px;
+    margin-top: 20%;
+    z-index: 99;
+}
+
+.testimonier {
+    margin-bottom: 20px;
+}
+
+.testimonier-identity h4 {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    margin-left: 10px;
+}
+
+.testimonier-identity h4 span {
+    font-family: 'Poppins';
+    font-style: italic;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    color: #03011C;
+
+}
+
+.testimony-box p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 200%;
+    color: #03011C;
+
+}
+
+.testimonier i {
+    color: #2E1D03;
+}
+
+@media screen and (max-width:900px) {
+
+    .testimonial-overlay {
+        text-align: left;
+        height: auto;
+        padding: 30px;
+    }
+
+    .testimonial-overlay h1 {
+        font-size: 35px;
+        margin-bottom: -20px;
+    }
+
+    .testimony-thread {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .testimony-box {
+        position: relative;
+        width: 100%;
+    }
+
+    .testimony-box p {
+        font-size: 14px;
+        line-height: 170%;
+    }
+
+    .testimony-thread .testimony-box:first-child,
+    .testimony-thread .testimony-box:nth-child(2),
+    .testimony-thread .testimony-box:last-child {
+        margin-top: 30px;
+        left: 0;
+        right: 0;
+        z-index: 0;
+    }
+
+    .testimonials .img1,
+    .testimonials .img2 {
+        display: none;
+    }
+    
+    
 }
