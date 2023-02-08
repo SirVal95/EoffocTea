@@ -48,3 +48,17 @@ function topFunction () {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 };
 
+
+// scroll reveal
+
+ScrollReveal({
+  reset: true,
+  distance:'60px',
+  delay: 60,
+  duration: 1500
+});
+
+
+ScrollReveal().reveal('.buy-your-craving, .roasted-coffee-described, .bulk-sell-described, .about-us h1, .stay-updated', { delay: 50, origin: 'top', interval: 100 });
+ScrollReveal().reveal('.buy-black-coffee1, .the-box, .about-us img', { delay: 50, origin: 'bottom', interval: 100 });
+
