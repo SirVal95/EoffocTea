@@ -151,7 +151,8 @@ a {
     color: #2E1D03;
 }
 
-.buy-black-coffee1 a, .buy-your-craving a {
+.buy-black-coffee1 a, 
+.buy-your-craving a {
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-style: normal;
     display: inline-block;
@@ -249,6 +250,11 @@ a {
     margin-right: 50px;
     padding: 0 10px 10px 10px;
     cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+.the-box:hover {
+    transform: translateY(-10px);
 }
 
 .the-box img {
@@ -719,6 +725,13 @@ a {
     backdrop-filter: blur(20px);
     border-radius: 15px;
     padding: 20px;
+    color: #03011C;
+    transition: 0.5s ease-in-out;
+}
+
+.testimony-box:hover {
+    background: #FFFFFF;
+    cursor: pointer;
 }
 
 .testimonier, 
@@ -852,7 +865,7 @@ a {
     width: 100%;
     height: auto;
     background: #FAF3DD;
-    padding: 50px 30px;
+    padding: 50px 30px 70px;
     text-align: center;
     font-family: 'Plus Jakarta Sans', sans-serif;
 }
@@ -875,16 +888,17 @@ a {
     background: rgba(255, 255, 255, 0.5);
     border-radius: 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
 }
 
 .the-blog-box {
-    padding: 20px;
     margin-right: 30px;
+    background: rgba(255, 255, 255, 0.25);
     width: 373.2px;
     height: 512px;
-    background: rgba(255, 255, 255, 0.25);
+    padding: 20px;
+    width: 100%;
     border-radius: 20px;
     backdrop-filter: blur(15px);
     display: flex;
@@ -964,7 +978,7 @@ a {
 
 @media screen and (max-width:900px) {
     .our-blog {
-        padding: 30px 20px;
+        padding: 30px 20px 50px;
     }
 
     .our-blog h1 {
@@ -978,13 +992,16 @@ a {
         width: 100%;
     }
 
-    .the-blog-box {
-        margin: 35px 0 0 0;
-        width: 310px;
+    
+    .blog-boxes .the-blog-box:first-child, 
+    .blog-boxes .the-blog-box:first-child  {
+        margin-top: 0;
     }
 
-    .blog-boxes .the-blog-box:first-child {
-        margin-top: 0;
+    .the-blog-box {
+        margin: 35px 0 0 0;
+        width: 300px;
+        height: 450px;
     }
 
     .the-blog-box h4 {
@@ -998,5 +1015,204 @@ a {
 
     .the-blog-box a {
         font-size: 19px;
+    }
+}
+
+/* OUR BLOG SESSION END */
+
+/* FOOTER SESSION */
+
+.footer {
+    width: 100%;
+    height: auto;
+    background: #FAF3DD;
+}
+
+.footer-overlay {
+    width: 100%;
+    height: auto;
+    padding: 50px;
+    background: url(assets/TeaImages/coffee\ patter\ 1.png) repeat;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left,
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-left {
+    align-items: left;
+}
+
+.footer .footer-a {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-style: normal;
+    display: block;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 200%;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 15px 40px;
+    width: 70%;
+    gap: 10px;
+    background: #2E1D03;
+    border-radius: 10px;
+    transition: 0.5s ease-in-out;
+}
+
+.footer .footer-a:hover,
+.links-and-company a:hover {
+    transform: translateY(-7px);
+}
+
+.links-and-company {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.links-and-company h4 {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 200%;
+    color: #2E1D03;
+    margin-top: 20px;
+}
+
+.links-and-company a {
+    display: block;
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 200%;
+    color: #2E1D03;
+    transition: 0.5s ease-in-out;
+}
+
+
+.links-and-company .links {
+    margin-right: 120px;
+    text-align: left;
+}
+
+.footer-right {
+    align-items: flex-end;
+}
+
+.footer-right h2 {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    color: #2E1D03;
+    text-align: left;
+}
+
+.footer-right p {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 200%;
+    text-align: right;
+    color: #2E1D03;
+    margin: 30px 0;
+}
+
+.designed-by {
+    background: url(assets/TeaImages/coffee\ patter\ 1.png) repeat;
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    text-align: center;
+}
+
+.designed-by p {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 200%;
+    text-align: center;
+    color: #2E1D03;
+}
+
+.designed-by a {
+    color: #03011C;
+    font-weight: 700;
+    margin: 0 5px;
+}
+
+.designed-by a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width:900px) {
+    .footer-overlay {
+        padding: 30px;
+        flex-direction: column-reverse;
+    }
+
+    .footer-right {
+        align-items: flex-start;
+    }
+
+    .footer-right h2 {
+        font-size: 33px;
+        line-height: 40px;
+    }
+
+    .footer-right p {
+        font-size: 14px;
+        line-height: 180%;
+        margin: 10px 0;
+        text-align: left;
+    }
+
+    .footer .footer-a {
+        font-size: 17px;
+    }
+
+    .footer .footer-a:first-child {
+        display: none;
+    }
+
+    .footer .footer-a:last-child {
+        width: 80%;
+        margin-top: 12px;
+    }
+
+    .footer-left {
+        align-items: flex-start;
+        margin-top: 30px;
+    }
+
+    .links-and-company h4 {
+        font-size: 18px;
+    }
+    
+    .links-and-company a {
+        font-size: 14px;
+        line-height: 180%;
+    }
+
+    .designed-by {
+        padding: 20px;
+    }
+
+    .designed-by p {
+        font-size: 14px;
+        line-height: 180%;
     }
 }

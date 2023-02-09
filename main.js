@@ -56,6 +56,9 @@ ScrollReveal({
 });
 
 
-ScrollReveal().reveal('.buy-your-craving, .roasted-coffee-described, .bulk-sell-described, .about-us h1, .stay-updated, .testimonial-overlay h1', { delay: 50, origin: 'top', interval: 100 });
-ScrollReveal().reveal('.buy-black-coffee1, .the-box, .bulk-sell img, .roasted-coffee img, .testimony-box, .the-blog-box', { delay: 50, origin: 'bottom', interval: 100 });
+ScrollReveal().reveal('.roasted-coffee img', { delay: 50, origin: 'left' });
+ScrollReveal().reveal('.bulk-sell img', { delay: 50, origin: 'right' });
+ScrollReveal().reveal('.buy-your-craving, .roasted-coffee-described, .bulk-sell-described,  .footer-right', { delay: 50, origin: 'top', interval: 100 });
+ScrollReveal().reveal('.buy-black-coffee1, .the-box-container, .testimony-box, .the-blog-box, .footer-left, .designed-by p', { delay: 50, origin: 'bottom', interval: 100 });
+
 
