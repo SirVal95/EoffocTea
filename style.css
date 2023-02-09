@@ -12,6 +12,17 @@ a {
     text-decoration: none;
 }
 
+/* PRELOADER */
+
+.preloader {
+    background: #03011C url(assets/TeaImages/Gear-0.5s-200px.gif) no-repeat center center;
+    background-size: 8%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 200;
+}
+
 
 /* HEADER SESSION */
 
@@ -325,7 +336,7 @@ a {
     }
 
     .hamburger-menu.is-active {
-        right: 50%;
+        right: 47%;
         background: transparent;
         border: 1.5px solid #FFFFFF;
     }
@@ -797,7 +808,8 @@ a {
 
     .testimonial-overlay h1 {
         font-size: 35px;
-        margin-bottom: -20px;
+        margin-bottom: -60px;
+        padding-bottom: 40px;
     }
 
     .testimony-thread {
