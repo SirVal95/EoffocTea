@@ -184,8 +184,8 @@ a {
 
 .black-coffee img {
     position: absolute;
-    width: 60%;
-    height: 100%;
+    width: 760px;
+    height: 680px;
     right: 0;
     top: 0;
 }
@@ -231,7 +231,7 @@ a {
 }
 
 .buy-your-craving a {
-    padding: 10px 40px;
+    padding: 10px 20px;
 }
 
 .boxes {
@@ -303,7 +303,7 @@ a {
 
 
 
-@media screen and (max-width:900px) {
+@media screen and (max-width:800px) {
 
     /* NAVBAR */
 
@@ -504,6 +504,70 @@ a {
     }
 }
 
+/* HEADER SESSION MEDIA QUERY FOR SOME TABLETS */
+
+@media only screen and (max-width:1100px) and (min-width:800px) {
+    .menu {
+        margin-right: 0;
+    }
+
+    .buy-black-coffee1 h1 {
+        font-size: 60px;
+    }
+
+    .buy-black-coffee1 p {
+        font-size: 14px;
+    }
+
+    .buy-black-coffee1 a {
+        font-size: 18px;
+    }
+
+    .fa-chevron-right{
+        font-size: 12px;
+    }
+
+    .black-coffee img {
+        width: 640px;
+        height: 650px;
+    }
+
+    .buy-black-coffee2 .cover {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 70px;
+    }
+
+    .buy-your-craving {
+        text-align: center;
+    }
+
+    .buy-your-craving h2 {
+        font-size: 30px;
+    }
+
+    .buy-your-craving h4 {
+        font-size: 14px;
+    }
+
+    .buy-your-craving a {
+        font-size: 18px;
+    }
+
+    .cover .boxes {
+        margin-top: 40px;
+        width: 100%;
+    }
+
+    .the-box {
+        padding: 0 23px 23px 23px;
+    }
+
+    .boxes .the-box:last-child {
+        margin-right: 0;
+    }
+}
+
 /* HEADER SESSION END */
 
 
@@ -622,7 +686,7 @@ a {
 }
 
 
-@media screen and (max-width:900px) {
+@media screen and (max-width:800px) {
     .about-us {
         padding: 40px 20px;
     }
@@ -689,6 +753,44 @@ a {
    
 }
 
+/* ABOUT US SESSION MEDIA QUERY FOR SOME TABLETS */
+
+@media only screen and (max-width:1100px) and (min-width:800px) {
+    .about-us {
+        padding: 50px 50px 70px;
+    } 
+
+    .about-us h1 {
+        font-size: 47px;
+        line-height: 60px;
+    }
+
+    .stay-updated {
+        margin-bottom: 40px;
+    }
+
+    .about-us h2 {
+        font-size: 48px;
+    }
+
+    .about-us a {
+        font-size: 18px;
+    }
+
+    .about-us p {
+        font-size: 16px;
+        line-height: 170%;
+    }
+
+    .about-us img {
+        width: 25%;
+    }
+
+    .bulk-sell {
+        margin-top: 70px;
+    }
+}
+
 /* ABOUT US SESSION ENDS */
 
 /* TESTIMONIALS */
@@ -702,7 +804,7 @@ a {
 
 .testimonial-overlay {
     width: 100%;
-    height: 120vh;
+    height: 690px;
     padding: 50px;
     background: url(assets/TeaImages/coffee\ patter\ 1.png) repeat;
 }
@@ -733,6 +835,7 @@ a {
 .testimony-box:hover {
     background: #FFFFFF;
     cursor: pointer;
+    text-shadow: 0 0 10px #817B74;
 }
 
 .testimonier, 
@@ -812,7 +915,7 @@ a {
     color: #2E1D03;
 }
 
-@media screen and (max-width:900px) {
+@media screen and (max-width:800px) {
 
     .testimonial-overlay {
         text-align: left;
@@ -856,6 +959,58 @@ a {
     .testimonials .img2 {
         display: none;
     }   
+
+    
+}
+
+/* TESTIMONY SESSION MEDIA QUERRY FOR SOME TABLETS */
+
+@media only screen and (max-width:1100px) and (min-width:800px) {
+    .testimonial-overlay {
+        text-align: left;
+        height: auto;
+        padding: 50px;
+    }
+
+    .testimonial-overlay h1 {
+        font-size: 45px;
+        margin-bottom: -60px;
+        padding-bottom: 40px;
+    }
+
+    .testimony-thread {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .testimony-box {
+        position: relative;
+        width: 100%;
+    }
+
+    .testimony-box p {
+        font-size: 16px;
+        line-height: 200%;
+    }
+
+    .testimony-thread .testimony-box:first-child,
+    .testimony-thread .testimony-box:nth-child(2),
+    .testimony-thread .testimony-box:last-child {
+        margin-top: 40px;
+        left: 0;
+        right: 0;
+        z-index: 1;
+    } 
+
+    .testimonials .img1 {
+        margin-top: -300px;
+    }
+
+    .testimonials .img2 {
+        margin-top: 0;
+    }
 }
 
 /* TESTIMONIALS END */
@@ -970,6 +1125,7 @@ a {
     background: transparent;
     color: #2E1D03;
     border: 1.5px solid #2E1D03;
+    padding: 15px 5px;
 }
 
 .blog-boxes .the-blog-box:nth-child(2) a .fa-chevron-right,
@@ -977,7 +1133,7 @@ a {
     border-color: #2E1D03;
 }
 
-@media screen and (max-width:900px) {
+@media screen and (max-width:800px) {
     .our-blog {
         padding: 30px 20px 50px;
     }
@@ -1016,6 +1172,38 @@ a {
 
     .the-blog-box a {
         font-size: 19px;
+    }
+}
+
+
+/* OUR BLOG SESSION MEDIA QUERY FOR SOME TABLETS */
+
+@media only screen and (max-width:1100px) and (min-width:800px) {
+    .our-blog h1 {
+        font-size: 48px;
+        line-height: 60px;
+    }
+
+    .our-blog .stay-updated {
+        margin-bottom: 50px;
+    }
+
+    .the-blog-box {
+        width: 325px;
+        height: 470px;
+    }
+
+    .the-blog-box h4 {
+        font-size: 23px;
+    }
+
+    .the-blog-box p {
+        font-size: 14px;
+        line-height: 180%;
+    }
+
+    .the-blog-box a {
+        font-size: 17px;
     }
 }
 
@@ -1159,7 +1347,7 @@ a {
     text-decoration: underline;
 }
 
-@media screen and (max-width:900px) {
+@media screen and (max-width:800px) {
     .footer-overlay {
         padding: 30px;
         flex-direction: column-reverse;
@@ -1219,5 +1407,34 @@ a {
     .designed-by p {
         font-size: 14px;
         line-height: 180%;
+    }
+}
+
+/* OUR BLOG SESSION MEDIA QUERY FOR SOME TABLETS */
+
+@media only screen and (max-width:1100px) and (min-width:800px) {
+    .footer a {
+        font-size: 17px;
+    }
+
+    .links-and-company a {
+        font-size: 14px;
+    }
+
+    .links-and-company h4 {
+        font-size: 18.5px;
+    }
+
+    .footer-right h2 {
+        font-size: 38px;
+    }
+
+    .footer-right p {
+        font-size: 14px;
+        margin: 10px 0;
+    }
+
+    .designed-by p {
+        font-size: 14px;
     }
 }
