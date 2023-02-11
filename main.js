@@ -25,7 +25,7 @@ window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
   if (document.documentElement.scrollTop > 80) {
     mybutton.style.display = "block";
-    navBar.style.background = "#FFFF"; //Nav-bar background 
+    navBar.style.background = "#FAF3DD"; //Nav-bar background 
   } else {
     mybutton.style.display = "none";
     navBar.style.background = "transparent";
