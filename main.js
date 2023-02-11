@@ -15,17 +15,20 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
 }))
 
 
-// Get the button:
+// Get the button for scroll to top and the div for nav-bar:
 let mybutton = document.getElementById("myBtn");
+let navBar = document.getElementById("nav-bar");
 
-// When the user scrolls down 20px from the top of the document, show the button
+// When the user scrolls down 80px from the top of the document, show the button and the nav-bar background
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.documentElement.scrollTop > 20) {
+  if (document.documentElement.scrollTop > 80) {
     mybutton.style.display = "block";
+    navBar.style.background = "#FFFF"; //Nav-bar background 
   } else {
     mybutton.style.display = "none";
+    navBar.style.background = "transparent";
   }
 };
 
