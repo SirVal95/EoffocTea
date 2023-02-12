@@ -351,9 +351,7 @@ a {
     }
 
     .hamburger-menu.is-active {
-        right: 47%;
         background: transparent;
-        border: 1.5px solid #FFFFFF;
     }
     
     .hamburger-menu .bar, 
@@ -391,17 +389,18 @@ a {
         position: fixed;
         top: 0;
         margin-top: 0;
-        left: 100%;
+        visibility: hidden;
+        opacity: 0;
         width: 100%;
-        min-height: auto;
+        min-height: 80vh;
         background: #2E1D03;
-        opacity: 0.88;
         z-index: 99;
-        transition: 0.5s;
+        transition: visibility 0.6s, opacity 0.6s linear;
     }
     
     .menu.is-active {
-        left: 0;
+        visibility: visible;
+        opacity: 0.88;
     }
     
     .menu a {
@@ -412,7 +411,6 @@ a {
         color: #FFFFFF;
         font-size: 18px;
         font-weight: 500;
-        border-top: solid 1px #817B74;
         border-radius: 0;
         background: transparent;
         margin: 0;
@@ -425,14 +423,11 @@ a {
         font-size: 18px;
     }
     
-    .menu a:last-child {
-        border-bottom: solid 1px #817B74;
-    }
-    
     .menu a:hover {
         padding-left: 30px;
         color: #FAF3DD;
         opacity: 1;
+        background: #0f0a01;
     }
 
     /* NAVBAR END */
