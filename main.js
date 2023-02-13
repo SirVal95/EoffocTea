@@ -14,6 +14,18 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
     mobile_menu.classList.remove("is-active");
 }))
 
+// close the menu when clicked outside in mobile view
+
+window.addEventListener('mouseup', function (e){
+  var menu = this.document.getElementById('menu');
+  if(e.target !== menu_btn && e.target !== menu){
+    menu_btn.classList.remove('is-active');
+    mobile_menu.classList.remove('is-active')
+  }
+  
+})
+
+
 
 // Get the button for scroll to top and the div for nav-bar:
 let mybutton = document.getElementById("myBtn");

@@ -350,9 +350,6 @@ a {
         transition: 0.5s;
     }
 
-    .hamburger-menu.is-active {
-        background: transparent;
-    }
     
     .hamburger-menu .bar, 
     .hamburger-menu:after, 
@@ -391,7 +388,7 @@ a {
         margin-top: 0;
         visibility: hidden;
         opacity: 0;
-        width: 100%;
+        width: 70%;
         min-height: 80vh;
         background: #2E1D03;
         z-index: 99;
