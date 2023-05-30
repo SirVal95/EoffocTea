@@ -73,7 +73,7 @@ ScrollReveal({
 
 ScrollReveal().reveal('.roasted-coffee img', { delay: 50, origin: 'left' });
 ScrollReveal().reveal('.bulk-sell img', { delay: 50, origin: 'right' });
-ScrollReveal().reveal('.buy-your-craving, .roasted-coffee-described, .bulk-sell-described,  .footer-right', { delay: 50, origin: 'top', interval: 100 });
-ScrollReveal().reveal('.buy-black-coffee1, .the-box-container, .testimony-box, .the-blog-box, .footer-left, .designed-by p', { delay: 50, origin: 'bottom', interval: 100 });
+ScrollReveal().reveal('.buy-your-craving, .roasted-coffee-described, .bulk-sell-described,  .footer-right, .designed-by p', { delay: 50, origin: 'top', interval: 100 });
+ScrollReveal().reveal('.buy-black-coffee1, .the-box-container, .testimony-box, .the-blog-box, .footer-left', { delay: 50, origin: 'bottom', interval: 100 });
 
 
